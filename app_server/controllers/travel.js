@@ -1,8 +1,7 @@
-const request = require('request');
+const request = require("request");
 const apiOptions = {
-  server: 'http://localhost:3000',
-}
-
+  server: "http://localhost:3000",
+};
 
 const renderTravelList = (rec, res, responseBody) => {
   let message = null;
@@ -21,7 +20,7 @@ const renderTravelList = (rec, res, responseBody) => {
     trips: responseBody,
     message,
   });
-};  
+};
 
 /* get travel list*/
 const travelList = (req, res) => {
@@ -38,8 +37,8 @@ const travelList = (req, res) => {
       console.error(err);
     }
     renderTravelList(req, res, body);
-  })
-}
+  });
+};
 
 module.exports = {
   travelList,
