@@ -6,10 +6,13 @@
 **Why did the backend use a NoSQL MongoDB database?**<br/><br/>
 A MongoDB database can scale much better than a SQL database. I expect that as this website grows it will continue to need to store more trip information for their customers. Something that can be scaled easier is a must here.
 
-Functionality
+**Functionality**
 
-    How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
-    Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
+**How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?**<br/><br/>
+JSON was orignially derived from Javascript but most programming languages can parse JSON data. JSON is used to store and retrieve data objects. Javascript can be used for this aswell but you wouldn't be able to use a Javascript object with another programming language like you can with JSON. The front and backend are tied together by using JSON.
+
+**Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.**<br/><br/>
+In many of the HTML files I implemented templates with handlebars. This allowed me to reuse the specific structure of the page easily. There are many benefits that come from reusable user interface components. The first thing that comes to mind is that is simplifies the design process and development. 
 
 Testing
 
